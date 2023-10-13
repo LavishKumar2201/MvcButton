@@ -20,17 +20,48 @@ namespace MvcButton.Controllers
         }
 
         // GET: Buttons
-        public async Task<IActionResult> Index(string searchString)
+        //public async Task<IActionResult> Index(string searchString)
+        //{
+        //    var buttons = from b in _context.Button
+        //                 select b;
+
+        //    if (!String.IsNullOrEmpty(searchString))
+        //    {
+        //        buttons = buttons.Where(s => s.Brand.Contains(searchString));
+        //    }
+
+        //    return View(await buttons.ToListAsync());
+        //}
+        //updated the code
+
+        // GET: Movies
+        public async Task<IActionResult> Index(string buttonShape, string searchString)
         {
+            // Use LINQ to get list of Shape.
+            IQueryable<string> shapeQuery = from b in _context.Button
+                                            orderby b.Shape
+                                            select b.Shape;
+
             var buttons = from b in _context.Button
                          select b;
 
-            if (!String.IsNullOrEmpty(searchString))
+            if (!string.IsNullOrEmpty(searchString))
             {
                 buttons = buttons.Where(s => s.Brand.Contains(searchString));
             }
 
-            return View(await buttons.ToListAsync());
+            if (!string.IsNullOrEmpty(buttonShape))
+            {
+                buttons = buttons.Where(x => x.Shape == buttonShape);
+            }
+
+            var buttonShapeVM = new ButtonShapeViewModel
+            {
+                Shape = new SelectList(await shapeQuery.Distinct().ToListAsync()),
+                Buttons = await buttons.ToListAsync()
+            };
+
+            return View(buttonShapeVM);
         }
         [HttpPost]
         public string Index(string searchString, bool notUsed)
