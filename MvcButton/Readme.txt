@@ -11,3 +11,7 @@ and started writing what i and douing
 At 12:29
 I add the new controller Named HelloWorldController.cs
 And simultaneously i am commiting it to my github.
+
+ At 12:37
+ I completed my part 2 and started part 3 and under that i updated view by ading a folder under view and and then adding a file named index.cshtml
+ and then commiting all to github.
