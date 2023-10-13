@@ -26,7 +26,6 @@ namespace MvcButton.Models
                    
                         Brand = "Gucci",
                         Colour = "Green",
-                        Type = "Round Button",
                         Shape = "Circle",
                         Price = 132.7M
                     },
@@ -36,7 +35,6 @@ namespace MvcButton.Models
                      
                         Brand = "Tommy",
                         Colour = "Red",
-                        Type = "Vitreous Enamel",
                         Shape = "Square",
                         Price = 115.6M
                     },
@@ -46,7 +44,6 @@ namespace MvcButton.Models
                   
                         Brand = "Burberry",
                         Colour = "Yellow",
-                        Type = "Plastic",
                         Shape = "Circle",
                         Price = 162.45M
                     },
@@ -56,7 +53,6 @@ namespace MvcButton.Models
                         
                         Brand = "Hollister",
                         Colour = "White",
-                        Type = "Snap Fastener",
                         Shape = "Heart",
                         Price = 72.6M
                     },
@@ -66,7 +62,6 @@ namespace MvcButton.Models
                     
                          Brand = "Puma",
                          Colour = "Black",
-                         Type = "Round Button",
                          Shape = "Circle",
                          Price = 98.9M
                      },
@@ -76,7 +71,6 @@ namespace MvcButton.Models
                      
                           Brand = "Nike",
                           Colour = "Blue",
-                          Type = "Snap Fasterner",
                           Shape = "Square",
                           Price = 112.2M
                       },
@@ -86,7 +80,6 @@ namespace MvcButton.Models
                       
                            Brand = "Addidas",
                            Colour = "Grey",
-                           Type = "Filled Button",
                            Shape = "Circle",
                            Price = 109.2M
                        },
@@ -96,7 +89,6 @@ namespace MvcButton.Models
                   
                             Brand = "Disel",
                             Colour = "Black",
-                            Type = "Floting Action Button",
                             Shape = "Circle",
                             Price = 72.4M
                         },
@@ -105,7 +97,6 @@ namespace MvcButton.Models
                          
                             Brand = "Old Navy",
                             Colour = "Grey",
-                            Type = "Iron",
                             Shape = "Circle",
                             Price = 72.9M
                         },
@@ -115,7 +106,6 @@ namespace MvcButton.Models
                          
                             Brand = "Jockey",
                             Colour = "Blue",
-                            Type = "Plastic",
                             Shape = "Heart",
                             Price = 72.9M
                         }
