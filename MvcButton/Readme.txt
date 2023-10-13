@@ -15,3 +15,9 @@ And simultaneously i am commiting it to my github.
  At 12:37
  I completed my part 2 and started part 3 and under that i updated view by ading a folder under view and and then adding a file named index.cshtml
  and then commiting all to github.
+
+ At 1:30
+ I completed my part 3 added and started part 4 by adding a class inder models  and updated it
+ After that i installeda command under tools then NuGet Pakage Manager
+ After that I added a new folder named Data and under that i added a class named MvcButtonContext.cs
+ and also added some using statements under my Startup.cs
