@@ -20,11 +20,23 @@ namespace MvcButton.Controllers
         }
 
         // GET: Buttons
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Button.ToListAsync());
-        }
+            var buttons = from b in _context.Button
+                         select b;
 
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                buttons = buttons.Where(s => s.Brand.Contains(searchString));
+            }
+
+            return View(await buttons.ToListAsync());
+        }
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
+        }
         // GET: Buttons/Details/5
         public async Task<IActionResult> Details(int? id)
         {
