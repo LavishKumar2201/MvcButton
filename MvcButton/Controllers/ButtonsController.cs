@@ -97,7 +97,7 @@ namespace MvcButton.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Brand,Colour,Shape,Price")] Button button)
+        public async Task<IActionResult> Create([Bind("Id,Brand,Colour,Shape,Price,Rating")] Button button)
         {
             if (ModelState.IsValid)
             {
@@ -129,7 +129,7 @@ namespace MvcButton.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Brand,Colour,Shape,Price")] Button button)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Brand,Colour,Shape,Price,Rating")] Button button)
         {
             if (id != button.Id)
             {

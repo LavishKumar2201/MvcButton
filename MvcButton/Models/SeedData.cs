@@ -27,6 +27,7 @@ namespace MvcButton.Models
                         Brand = "Gucci",
                         Colour = "Green",
                         Shape = "Circle",
+                        Rating = "A",
                         Price = 132.7M
                     },
 
@@ -36,6 +37,7 @@ namespace MvcButton.Models
                         Brand = "Tommy",
                         Colour = "Red",
                         Shape = "Square",
+                        Rating = "C",
                         Price = 115.6M
                     },
 
@@ -45,6 +47,7 @@ namespace MvcButton.Models
                         Brand = "Burberry",
                         Colour = "Yellow",
                         Shape = "Circle",
+                        Rating = "B",
                         Price = 162.45M
                     },
 
@@ -54,6 +57,7 @@ namespace MvcButton.Models
                         Brand = "Hollister",
                         Colour = "White",
                         Shape = "Heart",
+                        Rating = "A",
                         Price = 72.6M
                     },
 
@@ -63,6 +67,7 @@ namespace MvcButton.Models
                          Brand = "Puma",
                          Colour = "Black",
                          Shape = "Circle",
+                         Rating = "A",
                          Price = 98.9M
                      },
 
@@ -72,6 +77,7 @@ namespace MvcButton.Models
                           Brand = "Nike",
                           Colour = "Blue",
                           Shape = "Square",
+                          Rating = "A",
                           Price = 112.2M
                       },
 
@@ -81,6 +87,7 @@ namespace MvcButton.Models
                            Brand = "Addidas",
                            Colour = "Grey",
                            Shape = "Circle",
+                           Rating = "D",
                            Price = 109.2M
                        },
 
@@ -90,6 +97,7 @@ namespace MvcButton.Models
                             Brand = "Disel",
                             Colour = "Black",
                             Shape = "Circle",
+                            Rating = "A",
                             Price = 72.4M
                         },
                         new Button
@@ -98,6 +106,7 @@ namespace MvcButton.Models
                             Brand = "Old Navy",
                             Colour = "Grey",
                             Shape = "Circle",
+                            Rating = "D",
                             Price = 72.9M
                         },
 
@@ -107,6 +116,7 @@ namespace MvcButton.Models
                             Brand = "Jockey",
                             Colour = "Blue",
                             Shape = "Heart",
+                            Rating = "A",
                             Price = 72.9M
                         }
 
